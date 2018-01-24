@@ -1,0 +1,11 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  color: #eee;
+}
+
+a, a:visited {
+  color: white;
+  font-weight: bold;
+}
