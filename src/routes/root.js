@@ -26,11 +26,11 @@ app.get('/', function (req, res) {
   let timeStr = ""
 
   locations.forEach((zone, i) => {
-    timeStr += `|${zone.name}: ${getTimeStr(zone.tz)}\n`
+    timeStr += `| ${zone.name}: ${getTimeStr(zone.tz)}\n`
   })
 
 
-  template = template.replace("%thetimedescription%", timeStr)
+  template = template.replace(/%thetimedescription%/g, timeStr)
 
 
   res.send(template)
